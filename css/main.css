@@ -1,0 +1,533 @@
+body{
+	font-family: 'Ubuntu', sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	color: #543024;
+}
+div, p, input, header, a, form {
+	box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 38px;
+	margin-bottom: 47px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+ul,li {
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	transition: all 0.5s ease;
+}
+#myModal {
+  width: 310px; height: 345px;
+  padding: 30px 20px;
+  border-radius: 4px;
+  background: #fff;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  margin: auto;
+  display: none;
+  opacity: 0;
+  z-index: 38;
+  text-align: center;
+}
+
+#myModal #myModal__close {
+  width: 21px; height: 21px;
+  position: absolute;
+  font-size: 29px;
+  top: 1px; right: 11px;
+  cursor: pointer;
+  display: block;
+}
+
+#myOverlay {
+  z-index: 37;
+  position: fixed;
+  background: rgba(0,0,0,.7);
+  width: 100%; height: 100%;
+  top: 0; left: 0;
+  cursor: pointer;
+  display: none;
+}
+
+.form-popup h3{
+	margin-bottom: 15px;
+}
+.form-popup input{
+	padding: 0 10px;
+	width: 100%;
+	height: 45px;
+	margin-bottom: 10px;
+	font-family: 'Ubuntu', sans-serif;
+	border: 1px solid rgba(39, 52, 86, 0.26);
+	box-sizing: border-box;
+	font-size: 14px;
+	display: block;
+}
+.form-popup .btn{
+	margin-top: 15px;
+	font-size: 15px;
+	font-weight: 700;
+	color: #fff;
+	width: 200px;
+	border-radius: 69px;
+	padding: 15px 0px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.5s ease;
+}
+
+.header {
+	background: url('../img/img-main.jpg') no-repeat center top / cover;
+	color: #fff;
+	padding-top: 43px;
+	padding-bottom: 76px;
+}
+
+.header a{
+	color: #fff;
+}
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+.nav{
+	display: flex;
+	align-items: center;
+}
+.logotype{
+	display: flex;
+	align-items: center;
+	margin-right: 116px;
+}
+.logo{
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+	letter-spacing: 0.055em;
+	display: block;
+	padding-left: 15px;
+}
+.menu{
+	display: flex;
+}
+
+.menu li {
+	margin-right: 48px;
+}
+.menu li:last-child {
+	margin-right: 0px;
+}
+.menu a {
+	padding-bottom: 10px;
+	border-bottom: 1px solid transparent;
+}
+.menu a:hover {
+	border-bottom: 1px solid #FFFFFF;
+}
+.menu-btn{
+	display: none;
+}
+.menu-btn img {
+	display: block;
+	margin-left: 80px;
+	width: 30px;
+
+}
+.next {
+	width: 109px;
+	margin-left: 74px;
+}
+.next span{
+	font-size: 14px;
+	font-weight: 700;
+}
+.next p {
+	font-size: 12px;
+}
+.call{
+	font-weight: 700;
+	display: flex;
+	font-size: 14px;
+	align-items: center;
+	margin-left: auto;
+}
+.call-btn {
+	border: 1px solid #fff;
+	border-radius: 100px;
+	display: block;
+	width: 172px;
+	padding: 11px 27px;
+	text-align: center;
+	margin-right: 21px;
+	transition: all 0.5s ease;
+}
+.call-btn:hover{
+	background: #fff;
+	color: #9E8166;
+}
+
+.offer{
+	margin-top: 193px;
+	text-align: center;
+}
+.offer h1{
+	font-size: 50px;
+	margin-bottom: 19px;
+}
+.offer p{
+	font-size: 17px;
+	width: 462px;
+	margin: 0 auto;
+	margin-bottom: 19px;
+}
+.btn{
+	background-color: #ff7d34;
+	padding: 15px 41px;
+	border-radius: 69px;
+	font-weight: 700;
+	font-size: 17px;
+	width: 209px;
+	text-align: center;
+	display: block;
+	transition: all 0.5s ease;
+}
+.btn:hover{
+	background-color: #F86F22;
+}
+.offer .btn{
+	margin: 0 auto;
+}
+.arrow{
+	display: block;
+	text-align: center;
+	margin-top: 184px;
+}
+.travel{
+	padding-top: 98px;
+	padding-bottom: 96px;
+}
+.destinations {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap
+}
+.destinations-item{
+	display: flex;
+	align-items: center;
+	width: 585px;
+	box-shadow: 0px 17px 50px rgba(32, 40, 69, 0.14);
+	border-radius: 15px;
+	transition: all 0.5s ease;
+	margin-bottom: 31px;
+}
+
+.destinations-more {
+	display: none;
+}
+.destinations-visible {
+	display: flex;
+}
+.destinations-item:hover {
+	box-shadow: 0px 7px 20px rgba(32, 40, 69, 0.25);
+}
+.destinations-item img {
+	display: block;
+	border-radius: 15px 0 0 15px;
+}
+.destinations-content{
+	padding: 35px 28px 33px 30px;
+	font-size: 13px;
+}
+.destinations-details{
+	display: flex;
+	align-items: center;
+	margin-bottom: 16px;
+}
+.destinations-details span{
+	color: #fff;
+	background: #EE3C5C;
+	padding: 3px 13px;
+	border-radius: 30px;
+	margin-right: 3px;
+
+}
+.destinations-date{
+	color: #ee3c5c;
+	margin-left: 6px;
+}
+.destinations-content h3{
+	margin-bottom: 12px;
+}
+.btn-travel{
+	border: 1px solid #FF7D34;
+	color: #ff7d34;
+	border-radius: 69px;
+	display: block;
+	width: 245px;
+	padding: 15px 29px;
+	text-align: center;
+	transition: all 0.5s ease;	
+	font-weight: 700;
+	font-style: 17px;
+	margin-top: 27px;
+}
+.btn-travel:hover{
+	color: #fff;
+	background-color: #ff7d34;
+}
+.btn-travel-visibl{
+	display: none;
+}
+.info{
+	padding-bottom: 96px;
+}
+.info-content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.info-text{
+	width: 575px;
+}
+.info-text h3{
+	margin-bottom: 25px;
+}
+.first{
+	margin-bottom: 25px;
+}
+.info-text p{
+	line-height: 1.4em;
+}
+.img-info{
+	border-radius: 15px;
+}
+.contacts-content{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 994px;
+}
+.phone{
+	text-align: center;
+}
+.phone a{
+	color: #543024;
+}
+.phone p{
+	font-size: 20px;
+	font-weight: 700;
+	margin-top: 23px;
+}
+.form{
+	width: 601px;
+	box-shadow: 0px 17px 50px rgba(32, 40, 69, 0.14);
+	border-radius: 20px;
+	padding: 58px 64px 97px;
+}
+.form h3{
+	width: 380px;
+	margin-bottom: 45px;
+}
+.form input{
+	padding: 20px 26px;
+	margin: 0 auto;
+	border: 1px solid rgba(39, 52, 86, 0.26);
+	box-sizing: border-box;
+	border-radius: 5px;
+	font-size: 16px;
+	font-family: 'Ubuntu', sans-serif;
+	display: block;
+	width: 100%;
+	margin-bottom: 15px;
+}
+.form .btn{
+	font-size: 17px;
+	color: #fff;
+	width: 296px;
+	border-radius: 69px;
+	padding: 23px 84px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.5s ease;
+	margin-top: 20px;
+}
+.footer{
+	padding: 116px 0 119px;
+}
+.footer-text{
+	text-align: center;
+	color: rgba(114, 52, 26, 0.6);
+	font-size: 14px;
+}
+@media screen and (max-width: 1200px){
+	.container {
+		width: 960px;
+	}
+	.next {
+		display: none;
+	}
+	.logotype{
+		margin-right: 75px;
+	}
+	.menu-btn img {
+		display: block;
+	}
+	.destinations-item{
+		display: block;
+		width: 48%;
+	}
+	.destinations-item img{
+		width: 100%;
+		border-radius: 15px 15px 0 0;
+	}
+	.info-content{
+		flex-wrap: wrap;
+	}
+	.info-text{
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.img-info{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.contacts-content{
+		width: 845px;
+	}
+	.form{
+	width: 500px;
+}
+@media screen and (max-width: 992px){
+	.container {
+		width: 720px;
+	}.menu {
+		display: none;
+	}
+	.destinations-item{
+		display: flex;
+		width: 100%;
+	}
+	.destinations-item img{
+		width: 277px;
+		border-radius: 15px 0 0 15px;
+	}
+	.contacts-content{
+		display: block;
+		width: 100%;
+	}
+	.form{
+		width: 100%;
+		margin-bottom: 80px;
+	}
+	.form h3{
+		width: 100%;
+	}	
+@media screen and (max-width: 768px){
+	.container {
+		width: 540px;
+	}
+	.menu-btn img {
+		margin-left: 30px;
+	}
+	.logotype{
+		margin-right: 40px;
+	}
+	.destinations-content{
+		padding: 20px 15px 15px 20px;
+	}
+	.destinations-details {
+		font-size: 11px;
+	}
+}
+@media screen and (max-width: 576px){
+	.container {
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.call{
+		display: none;
+	}
+	.menu-btn {
+		margin-left: auto;
+	}
+	.offer {
+		margin-top: 100px;
+	}
+	.offer h1{
+		font-size: 30px;
+	}
+	.offer p{
+		font-size: 16px;
+		width: 100%;
+	}
+	.arrow{
+		margin-top: 85px;
+	}
+	h2 {
+		font-size: 23px;
+		margin-bottom: 40px;
+	}
+
+	h3 {
+		font-size: 18px;
+	}
+	.travel{
+		padding: 80px 0;
+	}
+	.destinations-item{
+		display: block;
+	}
+	.destinations-item img{
+		width: 100%;
+		border-radius: 15px 15px 0 0;
+	}
+	.destinations-content{
+		padding: 20px 20px 20px 20px;
+	}
+	.img-info{
+		width: 100%;
+	}
+	.info {
+   		padding-bottom: 80px;
+	}
+	.form{
+		width: 100%;
+		padding: 40px 30px 65px;
+	}
+	.form h3{
+		margin-bottom: 30px;
+	}
+	.form input{
+		padding: 16px 20px;
+		margin-bottom: 13px;
+	}
+	.form .btn{
+	font-size: 16px;
+	width: 100%;
+	padding: 22px 0;
+	}
+}
